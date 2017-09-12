@@ -15,15 +15,15 @@ function update(data: number[]) {
 
     const $enter = $update
       .enter() // ENTER selection to add new elements
-      .append('circle');
+      .append('circle')
+        .attr('cx', (d: number, i: number) => i * 100);
 
     $enter
       .merge($update) // merge ENTER & UPDATE to apply common settings
-      .attr('cx', (d: number, i: number) => i * 100)
       .transition()
       .delay((d: number, i: number) => i * 250)
       .duration(500)
-      .attr('r', (d: number) => d);
+        .attr('r', (d: number) => d);
 
     $update.exit().remove(); // remove obsolete elements on EXIT
 }

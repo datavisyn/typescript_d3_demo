@@ -1,11 +1,7 @@
 import * as d3 from 'd3';
 
-/**
- * Join data to <li> elements and update the <ul> element accordingly
- * @param {string[]} data
- */
 function update(data: string[]) {
-    // TODO
+    // TODO Join data to <li> elements and update the <ul> element accordingly
 }
 
 const names: string[] = ['Anna', 'John', 'Thomas', 'Linda'];
