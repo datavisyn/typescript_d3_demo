@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile:ts_demo": "tsc app/typescript/demo/*.ts",
+    "compile:ts_hands_on": "tsc app/typescript/hands_on/*.ts",
+    "compile:d3_demo_join": "tsc app/d3/demo/data_join/*.ts",
+    "compile:d3_demo_axes": "tsc app/d3/demo/scales_axes/*.ts",
+    "compile:d3_hands_on": "tsc app/d3/hands_on/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,6 +19,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@types/d3": "^4.10.0"
+    "@types/d3": "^4.10.0",
+    "typescript": "^3.0.1"
   }
 }
